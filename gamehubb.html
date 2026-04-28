@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="top">
+
+    <!-- ================= NAVBAR ================= -->
+<div class="navbar">
+
+    <div class="logo" onclick="toggleMenu()">
+        <img src="images/logo.png" alt="logo">
+    </div>
+
+    <!-- MENU -->
+    <div id="menu" class="menu">
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+</div>
+    <div id="menu" class="menu hide">
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+</div>
+
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="hero">
+        <h1>Welcome to Game Hub 🎮</h1>
+        <p>Discover the best online games!</p>
+
+        <a href="games.html">
+            <button>Explore Games</button>
+        </a>
+    </div>
+
+    <!-- ================= STATS ================= -->
+    <div class="stats">
+        <div>
+            <h3>🎮 50+</h3>
+            <p>Games</p>
+        </div>
+
+        <div>
+            <h3>👥 1K+</h3>
+            <p>Players</p>
+        </div>
+
+        <div>
+            <h3>⭐ 4.8</h3>
+            <p>Rating</p>
+        </div>
+    </div>
+
+    <!-- ================= FEATURED GAME ================= -->
+    <div class="featured-game">
+        <h2>🔥 Featured Game</h2>
+
+        <div class="featured-card">
+            <img src="images/game1.jpg.jpeg" alt="Featured Game">
+
+            <div>
+                <h3>FIFA 23</h3>
+                <p>Most popular football game 🎮</p>
+
+                <a href="javascript:void(0)" class="play-btn"
+                   onclick="openModal('FIFA 23','Football game with realistic graphics','4.7')">
+                   Play Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= GAMES ================= -->
+    <div class="games">
+        <h2>Popular Games</h2>
+
+        <div class="game-card">
+            <img src="images/game5.jpg" alt="Game 1">
+
+            <a href="javascript:void(0)" class="play-btn"
+               onclick="openModal('Game 1','Racing speed game','4.5')">
+               Play Now
+            </a>
+        </div>
+
+        <div class="game-card">
+            <img src="images/game2.jpg.jpeg" alt="Game 2">
+
+            <a href="javascript:void(0)" class="play-btn"
+               onclick="openModal('Game 2','Adventure survival game','4.3')">
+               Play Now
+            </a>
+        </div>
+
+        <div class="game-card">
+            <img src="images/game3.jpg" alt="Game 3">
+
+            <a href="javascript:void(0)" class="play-btn"
+               onclick="openModal('Game 3','Action multiplayer game','4.6')">
+               Play Now
+            </a>
+        </div>
+
+        <div class="game-card">
+            <img src="images/game4.jpg" alt="Game 4">
+
+            <a href="javascript:void(0)" class="play-btn"
+               onclick="openModal('Game 4','Puzzle brain game','4.2')">
+               Play Now
+            </a>
+        </div>
+    </div>
+
+    <!-- ================= WHY US ================= -->
+    <div class="why-us">
+        <h2>Why Game Hub?</h2>
+
+        <ul>
+            <li>✔ Free Games</li>
+            <li>✔ Fast Loading</li>
+            <li>✔ Mobile Friendly</li>
+            <li>✔ Updated Weekly</li>
+        </ul>
+    </div>
+
+    <!-- ================= DATE ================= -->
+    <div class="date-box">
+        <span>📅 Today</span>
+        <p id="date"></p>
+    </div>
+
+    <!-- ================= BACK TO TOP ================= -->
+    <a href="#top">⬆ Back to Top</a>
+
+    <!-- ================= MODAL ================= -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+
+            <span class="close" onclick="closeModal()">&times;</span>
+
+            <h2 id="gameTitle">Game Title</h2>
+            <p id="gameDesc">Game description here...</p>
+            <p id="gameRate">⭐ Rating</p>
+
+            <button class="modal-btn">Play Now</button>
+        </div>
+    </div>
+
+    <!-- ================= JS ================= -->
+    <script src="js/script.js"></script>
+
+    <script>
+        document.getElementById("date").innerHTML =
+            new Date().toDateString();
+    </script>
+
+</body>
+
+</html>
